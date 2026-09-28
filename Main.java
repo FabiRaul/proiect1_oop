@@ -159,7 +159,6 @@
                         Elev elevDeSters = Elev.cauta_dupa_id(lista_Elevi, idStergere);
 
                         if (elevDeSters != null) {
-                            // Se sterge si din sali
                             for (Sala s : lista_sali) {
                                 if (s.get_listaElevi().contains(elevDeSters)) {
                                     s.sterge_elev(elevDeSters);
